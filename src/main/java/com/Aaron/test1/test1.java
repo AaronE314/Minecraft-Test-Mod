@@ -1,14 +1,18 @@
 package com.Aaron.test1;
 
-import com.Aaron.test1.configuration.ConfigurationHandler;
+import com.Aaron.test1.handler.ConfigurationHandler;
+import com.Aaron.test1.init.ModBlocks;
+import com.Aaron.test1.init.ModItems;
 import com.Aaron.test1.proxy.IProxy;
 import com.Aaron.test1.reference.Reference;
+import com.Aaron.test1.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class test1 {
 
     @Mod.Instance(Reference.MOD_ID)
@@ -18,17 +22,23 @@ public class test1 {
     public static IProxy proxy;
 
     @Mod.EventHandler
-    public void Preint(FMLPreInitializationEvent event) {
+    public void PreInt(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        ModItems.init();
+        ModBlocks.init();
+
+        LogHelper.info("PreInitialization Complete");
     }
 
     @Mod.EventHandler
     public void Int(FMLPreInitializationEvent event) {
-
+        LogHelper.info("Initialization Complete");
     }
 
     @Mod.EventHandler
-    public void Postint(FMLPostInitializationEvent event) {
-
+    public void PostInt(FMLPostInitializationEvent event) {
+        LogHelper.info("PostInitialization Complete");
     }
 }
