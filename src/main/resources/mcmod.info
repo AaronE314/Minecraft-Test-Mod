@@ -1,0 +1,20 @@
+[
+{
+"modid": "test1",
+"name": "Test 1",
+"description": "A Test Mod",
+"version": "1.0",
+"credits": "Thanks to Pahimar for helping me get started with modding",
+"logoFile": "",
+"mcversion": "1.7.10",
+"url": "",
+"updateUrl": "",
+"authors": [ "Aaron" ],
+"parent":"",
+"requiredMods": [ "Forge" ],
+"dependencies": [ "mod_MinecraftForge" ],
+"dependants": [],
+"screenshots": [],
+"useDependencyInformation": false
+}
+]
