@@ -1,3 +1,15 @@
+#Keys
+keys.test1.category=Test 1
+keys.test1.charge=Charge
+keys.test1.release=Release
+
+#Items
 item.test1:testingot.name=Test Ingot
 
+
+#Blocks
 tile.test1:testore.name=Test Ore
+
+
+#Creative Tab
+itemGroup.test1=Test Mod
