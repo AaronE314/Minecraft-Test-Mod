@@ -13,6 +13,7 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.testingot), new ItemStack(ModBlocks.testore), new ItemStack(Items.coal));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.testingot, 6), "gig", "ici", "gig", 'i', "ingotIron", 'g', "ingotGold", 'c', new ItemStack(Items.coal)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.testingot, 3), "ingotIron", new ItemStack(ModBlocks.testore), new ItemStack(Items.coal)));
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.testmetalblock), "ttt", "ttt", "ttt", 't', new ItemStack(ModItems.testingot));
 
         GameRegistry.addSmelting(ModBlocks.testore, new ItemStack(ModItems.testingot), 0.7f);
     }

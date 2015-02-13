@@ -9,6 +9,7 @@ item.test1:testingot.name=Test Ingot
 
 #Blocks
 tile.test1:testore.name=Test Ore
+tile.test1:testmetalblock.name=Test Metal Block
 
 
 #Creative Tab

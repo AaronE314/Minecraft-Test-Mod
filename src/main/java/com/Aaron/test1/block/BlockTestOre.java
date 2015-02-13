@@ -4,5 +4,6 @@ public class BlockTestOre extends Blocktest1 {
     public BlockTestOre() {
         super();
         this.setBlockName("testore");
+        this.setHardness(1f);
     }
 }
