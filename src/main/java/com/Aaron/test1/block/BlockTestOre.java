@@ -5,5 +5,6 @@ public class BlockTestOre extends Blocktest1 {
         super();
         this.setBlockName("testore");
         this.setHardness(1f);
+        this.setHarvestLevel("pickaxe", 1);
     }
 }

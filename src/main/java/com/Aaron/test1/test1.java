@@ -8,6 +8,7 @@ import com.Aaron.test1.init.Recipes;
 import com.Aaron.test1.proxy.IProxy;
 import com.Aaron.test1.reference.Reference;
 import com.Aaron.test1.utility.LogHelper;
+import com.Aaron.test1.world.oregen.test1oregen;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -32,6 +33,7 @@ public class test1 {
         proxy.registerKeyBindings();
         ModItems.init();
         ModBlocks.init();
+        test1oregen.test1();
 
         LogHelper.info("PreInitialization Complete");
     }
