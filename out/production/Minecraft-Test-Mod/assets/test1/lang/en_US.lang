@@ -5,6 +5,11 @@ keys.test1.release=Release
 
 #Items
 item.test1:testingot.name=Test Ingot
+item.testpick.name=Test PickAxe
+item.testaxe.name=Test Axe
+item.testhoe.name=Test Hoe
+item.testshovel.name=Test Shovel
+item.testsword.name=Test Sword
 
 
 #Blocks
